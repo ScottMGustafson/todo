@@ -23,21 +23,26 @@ Setting it up:
 
 How to run:
 -----------
-    commands are generally of the format:
-    `$ todo <command> <text>`
-    
-    to add something we do
-    `$ todo add 2:do something`
-    which will place write 
-    "2     : do something"
-    in todo.txt on the second line
-    
-    `$ todo` add do something
-    will put the same text, but in the first place
+commands are generally of the format:
 
-    `$ todo list`
-    will print out the todo list by calling 'more <name> | less'
+        $ todo <command> <text>
+    
+to add something we do
 
-    `$ todo done 3`
-    will remove the third item on the list
+        $ todo add 2:do something
+
+which will place write 
+"2     : do something"
+in todo.txt on the second line
+    
+`$ todo` add do something
+will put the same text, but in the first place
+
+        $ todo list
+
+will print out the todo list by calling 'more <name> | less'
+
+        $ todo done 3
+
+will remove the third item on the list
 
