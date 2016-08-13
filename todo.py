@@ -213,12 +213,10 @@ class Todo(object):
             for item in self.rawText:
                 f.write(str(item)+'\n')
         f.close()
-        return 
 
     def printOut(self):
         cmd = 'more '+self.name+' | less'
         os.system(cmd)
-        return
         
     
 def getNonBlank(filestream):
@@ -237,7 +235,8 @@ if __name__ == '__main__':
     except IndexError:
         print('need some more input')
         sys.exit()
-    except: raise
+    except: 
+        raise
 
     if len(sys.argv) == 2:
         if not (sys.argv[1] in commands[1:]):
@@ -263,4 +262,3 @@ if __name__ == '__main__':
         elif cmd=='done' or cmd=='rm': 
             todo.done(string)
             todo.writeOut()
-    return
